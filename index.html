@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK MERCHANDISING</title>
+    <link rel="stylesheet" href="CSS site DK.css">
+    <!-- Lien Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="logo(transparent).png" alt="DK Logo" class="logo">
+    </div>
+    <h1>DK MERCHANDISING</h1>
+    <p>Welcome to DK WORD'S!</p>
+    <p>Commande et fais toi livrer en 24h!</p>
+    <p>Clique sur l'icône panier pour voir tous les articles que tu as choisi et valider ta commande après avoir fait ton choix!</p>
+</header>
+
+
+<section id="shooting-photos">
+    <div class="slider">
+        <div class="slides">
+            <img src="SHOOTING 3.jpg" alt="Image 1">
+            <img src="SHOOTING 5.jpg" alt="Image 2">
+            <img src="SHOOTING 6.jpg" alt="Image 3">
+            <img src="SHOOTING 8.jpg" alt="Image 3">
+
+            <!-- Ajoute d'autres images si nécessaire -->
+        </div>
+        
+    </div>
+    
+    <!-- Points de navigation -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    
+</section>
+
+
+<nav>
+    <a href="#tshirts">T-shirts</a>
+    <a href="#casquettes">Casquettes</a>
+    <div class="cart-icon-container">
+        <i class="fas fa-shopping-cart cart-icon" onclick="toggleCartModal()"></i>
+        <span id="cart-total">0 FCFA</span>
+    </div>
+</nav>
+
+
+
+
+
+<section id="tshirts">
+    <h2>T-shirts</h2>
+    <div class="product-grid">
+        <div class="product">
+            <div class="product-images">
+                <img src="1 white avant.png" alt="T-shirt 1 - Avant">
+                <img src="1 white arriere.png" alt="T-shirt 1 - Arrière">
+            </div>
+            <p class="product-name">T-SHIRT #1 (blanc)</p>
+            <p class="product-description">BLOOD CROWN</p>
+            <p class="product-description">Un T-shirt classique en blanc, 100% coton.</p>
+            <p class="product-price">Prix: 6,999FCFA</p>
+            
+            <label for="size-tshirt-1">Taille :</label>
+            <select id="size-tshirt-1" class="product-size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <button onclick="addToCart('T-SHIRT #1 (blanc)', 7000, document.getElementById('size-tshirt-1').value)">Commander</button>
+        </div>
+        
+        <div class="product">
+            <div class="product-images">
+                <img src="tee shirt DK 1.jpg" alt="T-shirt 2 - Avant">
+                <img src="ARRIERE 1.png" alt="T-shirt 2 - Arrière">
+            </div>
+            <p class="product-name">T-shirt #1 (noir)</p>
+            <p class="product-description">BLOOD CROWN</p>
+            <p class="product-description">Un T-shirt classique en noir, 100% coton.</p>
+            <p class="product-price">Prix: 6,999FCFA</p>
+            
+            <label for="size-tshirt-2">Taille :</label>
+            <select id="size-tshirt-2" class="product-size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <button onclick="addToCart('T-shirt #1 (noir)', 7000, document.getElementById('size-tshirt-2').value)">Commander</button>
+        </div>
+        
+        <div class="product">
+            <div class="product-images">
+                <img src="1 white avant.png" alt="T-shirt 3 - Avant">
+                <img src="2 white arriere.png" alt="T-shirt 3 - Arrière">
+            </div>
+            <p class="product-name">T-shirt #2 (blanc)</p>
+            <p class="product-description">I'M SIMPLE</p>
+            <p class="product-description">Un T-shirt élégant et confortable, 100% coton pour les personnes simples.</p>
+            <p class="product-price">Prix: 6,999FCFA</p>
+            
+            <label for="size-tshirt-3">Taille :</label>
+            <select id="size-tshirt-3" class="product-size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <button onclick="addToCart('T-shirt #2 (blanc)', 7000, document.getElementById('size-tshirt-3').value)">Commander</button>
+        </div>
+        
+        <div class="product">
+            <div class="product-images">
+                <img src="tee shirt DK 1.jpg" alt="T-shirt 4 - Avant">
+                <img src="ARRIERE 2.png" alt="T-shirt 4 - Arrière">
+            </div>
+            <p class="product-name">T-shirt #2 (noir)</p>
+            <p class="product-description">I'M SIMPLE</p>
+            <p class="product-description">Un T-shirt élégant et confortable, 100% coton pour les personnes simples.</p>
+            <p class="product-price">Prix: 6,999FCFA</p>
+            
+            <label for="size-tshirt-4">Taille :</label>
+            <select id="size-tshirt-4" class="product-size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <button onclick="addToCart('T-shirt #2 (noir)', 7000, document.getElementById('size-tshirt-4').value)">Commander</button>
+        </div>
+
+        <div class="product">
+            <div class="product-images">
+                <img src="2 white avant.png" alt="T-shirt 5 - Avant">
+                <img src="3 white arriere.png" alt="T-shirt 5 - Arrière">
+            </div>
+            <p class="product-name">T-shirt #3 (blanc)</p>
+            <p class="product-description">SPECIAL</p>
+            <p class="product-description">Un T-shirt confortable, 100% coton, parfait pour se démarquer.</p>
+            <p class="product-price">Prix: 6,999FCFA</p>
+            
+            <label for="size-tshirt-5">Taille :</label>
+            <select id="size-tshirt-5" class="product-size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <button onclick="addToCart('T-shirt #3 (blanc)', 7000, document.getElementById('size-tshirt-5').value)">Commander</button>
+        </div>
+        
+        <div class="product">
+            <div class="product-images">
+                <img src="tee shirt DK 2.png" alt="T-shirt 6 - Avant">
+                <img src="ARRIERE 3.png" alt="T-shirt 6 - Arrière">
+            </div>
+            <p class="product-name">T-shirt #3 (noir)</p>
+            <p class="product-description">SPECIAL</p>
+            <p class="product-description">Un T-shirt confortable, 100% coton, parfait pour se démarquer.</p>
+            <p class="product-price">Prix: 6,999FCFA</p>
+            
+            <label for="size-tshirt-6">Taille :</label>
+            <select id="size-tshirt-6" class="product-size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <button onclick="addToCart('T-shirt #3 (noir)', 7000, document.getElementById('size-tshirt-6').value)">Commander</button>
+        </div>
+    </div>
+</section>
+
+<section id="casquettes">
+    <h2>Casquettes</h2>
+    <div class="product-grid">
+        <div class="product">
+            <div class="product-images">
+                <img src="CASQUETTE  NOIRE AVANT.png" alt="Casquette 1 - Avant">
+                <img src="CASQUETTE  NOIRE arriere.png" alt="Casquette 1 - Arrière">
+            </div>
+            <p class="product-name">CASQUETTE NOIRE</p>
+            <p class="product-description">Une casquette noire brodée DK.</p>
+            <p class="product-price">Prix: 4,999FCFA</p>
+            
+            <button onclick="addToCart('Casquette Noire', 5000)">Commander</button>
+        </div>
+
+        
+
+        <div class="product">
+            <div class="product-images">
+                <img src="CASQUETTE BLANCHE avant.png" alt="Casquette 3 - Avant">
+                <img src="CASQUETTE BLANCHE arrière.png" alt="Casquette 3 - Arrière">
+            </div>
+            <p class="product-name">CASQUETTE BLANCHE</p>
+            <p class="product-description">Une casquette blanche brodée DK.</p>
+            <p class="product-price">Prix: 4,999FCFA</p>
+            
+            <button onclick="addToCart('Casquette Blanche', 5000)">Commander</button>
+        </div>
+    </div>
+</section>
+
+<!-- Modale pour le panier -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <h3>Votre Panier</h3>
+        <ul id="cart-items"></ul>
+        <p>Total : <span id="cart-total-modal">0 FCFA</span></p>
+        <button onclick="validateOrder()">Valider la commande</button>
+        <button onclick="toggleCartModal()">Fermer</button>
+    </div>
+</div>
+
+<!-- Modale pour le formulaire de commande -->
+<div id="order-form-modal" class="order-form-modal">
+    <div class="order-form-content">
+        <span class="close" onclick="toggleOrderForm()">&times;</span>
+        <h3>Formulaire de commande</h3>
+        <form>
+            <input type="email" placeholder="Adresse email" required>
+            <input type="password" placeholder="Mot de passe" required>
+            <input type="tel" placeholder="Téléphone" required>
+            <input type="text" placeholder="Lieu de livraison" required>
+            <button type="submit">Valider la commande</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="confirmation-message"></div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 DK MERCHANDISING | Tous droits reservés.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#shooting-photos"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+<script src="Java site DK.js"></script>
+
+</body>
+</html>

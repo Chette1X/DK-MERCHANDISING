@@ -1,0 +1,487 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center; /* Centre le texte */
+    padding: 20px; /* Ajoute de l'espace autour de l'en-tête */
+    background-color: black;
+    color: black;
+    background-color: white;
+}
+
+
+
+.logo-container {
+    margin-bottom: -75px; /* Espace sous le logo */
+}
+
+.logo {
+    width: 300px; /* Ajustez la taille du logo si nécessaire */
+}
+
+h1 {
+    font-size: 2em; /* Ajuste la taille du titre */
+    margin: 10px 0; /* Espace au-dessus et en dessous du titre */
+}
+
+p {
+    font-size: 1em; /* Taille du texte des paragraphes */
+    margin: 5px 0; /* Espace autour des paragraphes */
+}
+
+.cart-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    cursor: pointer; /* Changer le curseur sur l'icône */
+}
+
+/* Container for the slider */
+.slider {
+    width: 90%; /* Augmentation de la largeur du slider */
+    margin: 0 auto; /* Centre toujours le slider */
+    max-width: 800px; /* Augmentation de la largeur maximale */
+}
+
+/* Images inside the slider */
+.slides img {
+    width: 100%; /* Les images remplissent toute la largeur du slider */
+    height: auto; /* La hauteur s'ajuste automatiquement */
+    max-height: 700px; /* Augmentation de la hauteur maximale des images */
+    object-fit: cover; /* Remplit le conteneur sans déformation */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Points de navigation */
+.dot {
+    height: 10px;
+    width: 150px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Flèches de navigation */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Points de navigation */
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+
+
+.cart-icon {
+    font-size: 24px; /* Taille de l'icône */
+    color: black; /* Couleur de l'icône */
+    transition: color 0.3s; /* Animation de la couleur */
+}
+
+.cart-icon:hover {
+    color: rgb(201, 0, 0); /* Changer de couleur au survol */
+}
+
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* Panier */
+.cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+#cart-total {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Section générale */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Grille de produits */
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.product {
+    width: 60%;
+    margin-bottom: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0 8px 15px rgba(255, 0, 0, 0.6);
+}
+
+.product-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product-images img {
+    width: 48%;
+    height: auto;
+}
+
+.product-name {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-description {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Boutons */
+button {
+    background-color: rgb(201, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(147, 0, 0);
+}
+
+/* Modale pour le panier */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 90%; /* Limite la largeur à 90% de l'écran */
+    width: 500px; /* Taille maximum sur PC */
+    box-sizing: border-box; /* Inclure padding et bordures dans la largeur */
+    overflow-y: auto; /* Ajoute un défilement si le contenu dépasse */
+}
+
+.cart-modal-content {
+    text-align: center;
+    max-height: 80vh; /* Limite la hauteur pour éviter le débordement */
+    overflow-y: auto; /* Active le défilement vertical si nécessaire */
+}
+
+#confirmation-message {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Modale pour validation de commande */
+.order-form-modal {
+    display: none; /* Assurez-vous que le formulaire est caché par défaut */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.order-form-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; /* Largeur maximale */
+    margin: 0 20px; /* Marge pour éviter les débordements */
+    text-align: center;
+    position: relative;
+}
+
+
+.order-form-modal .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.product-sizes {
+    margin: 10px 0; /* Espace autour de la section des tailles */
+}
+
+.product-sizes label {
+    font-size: 16px; /* Taille de la police pour le label */
+}
+
+.product-size {
+    padding: 5px; /* Espace intérieur du select */
+    background-color: rgb(201, 0, 0);
+    color: white;
+    font-size: 14px; /* Taille de la police pour le select */
+    border-radius: 5px; /* Coins arrondis pour le select */
+    border: 1px solid #ccc; /* Bordure grise */
+    width: 100%; /* Largeur à 100% */
+    max-width: 200px; /* Largeur max pour le select */
+    margin-top: 5px; /* Espace au-dessus du select */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* L'input prend toute la largeur */
+    box-sizing: border-box; /* Assure que la bordure ne dépasse pas */
+}
+
+/* Footer */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Styles responsives */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    .product-images img {
+        width: 100%;
+    }
+
+    .product-size {
+        font-size: 14px; /* Taille de la police pour mobile */
+        padding: 5px; /* Réduire l'espace intérieur pour mobile */
+        width: 90%; /* Ajuster la largeur pour mobile, laissant un petit espace */
+    }
+
+    button {
+        width: 100%; /* Rendre le bouton de commande plein largeur */
+        padding: 12px; /* Ajuster l'espace intérieur du bouton */
+        font-size: 16px; /* Ajuster la taille de la police du bouton */
+    }
+
+    
+    .cart-modal {
+        width: 90%; /* La modale prendra 90% de la largeur sur mobile */
+        max-width: none; /* Supprime la limite de largeur fixe */
+        padding: 15px; /* Réduit le padding pour éviter les débordements */
+    }
+
+    .cart-modal-content, .order-form-content {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    .order-form-content {
+        padding: 15px;
+    }
+
+    input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .cart-modal {
+        width: 100%; /* Prend toute la largeur sur les petits écrans */
+        padding: 10px;
+    }
+
+    .cart-modal-content {
+        font-size: 14px; /* Taille de texte plus petite pour mobile */
+    }
+    @media (max-width: 480px) {
+        /* Ensure product images stack vertically */
+        .product-images {
+            display: flex; /* Use flexbox to control layout */
+            flex-direction: column; /* Stack images vertically */
+            align-items: center; /* Center images */
+            overflow: hidden; /* Hide any overflow */
+        }
+    
+        .product-images img {
+            width: 100%; /* Make each image take full width */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Space between images */
+        }
+    
+        /* Adjust product container to avoid overflow */
+        .product {
+            width: 100%; /* Ensure product takes full width */
+            box-sizing: border-box; /* Include padding and border in the element's total width */
+        }
+    }
+    
+}
